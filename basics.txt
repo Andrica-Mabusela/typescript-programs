@@ -1,0 +1,14 @@
+# In order to configure A typescript project, you have to initialize a typescript project:-
+=> tsc --init 
+Then change the rootDir and outDir in the tsconfig.json file in order to set up the source (typescript) and output (javascript) files 
+
+# To run all the typescript files:-
+=> tsc
+
+3 To run all the typescript files and watch them, use:-
+=> tsc --watch
+
+# We can add the "include" property at the semi-end of the tsconfig.json file and give it an array of which folders to look for sorce typescript files
+=> example:- "include": ["src"]
+
+
