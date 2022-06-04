@@ -1,6 +1,10 @@
+import { HasFormatter } from './HasFormatter'
+import { Invoice } from './Invoice'
+
 let character = 'mario';   // STRING
 let age = 30;            // NUMBER
 let isBlackBelt = false; // BOOLEAN
+
 
 
 // WE CANNOT CHANGE THE DATA TYPES BUT WE CAN CHANGE THE VALUES
@@ -80,4 +84,16 @@ let uid: number | string; // The uid expects to be given a number or string valu
 console.log(person)
 
 console.log(arr)
+
+
+let docs: HasFormatter[] = []
+
+const clientA = new Invoice('Danny', 'Playing hockey on the new york rangers', 5000)
+const clientB = new Invoice('Ben', 'Bartending at Bar on B', 2000)
+
+docs.push(clientA)
+docs.push(clientB)
+
+console.log(docs);
+
 
